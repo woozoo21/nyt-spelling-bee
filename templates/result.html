@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Solved!</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Results</h1>
+
+      {% if 'Pangram' in result %}
+        <h2>PANGRAM - "{{ result['Pangram'][0] }}"</h2> <!-- Assuming there's only one pangram -->
+      {% endif %}
+
+      {% for key, value in result.items() %}
+        {% if key != 'Pangram' %}
+          <h3>{{ key }} letter words</h3>
+          <ol>
+            {% for item in value %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ol>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </body>
+</html>

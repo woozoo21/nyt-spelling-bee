@@ -1,0 +1,82 @@
+body {
+    background-color: #fff7c0;
+    color: #5c3c1e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    color: #ffb703;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  form {
+    margin: 30px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff3a6;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ffb703;
+    border-radius: 10px;
+    width: 80%;
+  }
+  
+  input[type="submit"] {
+    background-color: #ffb703;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #fca311;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    text-align: left;
+    display: inline-block;
+    background: #fffde7;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  li {
+    padding: 5px;
+  }
+  
+  /* Cute bee animation */
+  #bee {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 60px;
+    animation: flyBee 10s infinite;
+  }
+  
+  @keyframes flyBee {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(200px) rotate(10deg); }
+    50% { transform: translateX(400px) rotate(-10deg); }
+    75% { transform: translateX(600px) rotate(10deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+  }  
