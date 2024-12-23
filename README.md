@@ -24,3 +24,10 @@ A Python-based web application that helps solve the New York Times Spelling Bee 
    ```bash
    git clone https://github.com/your-username/nyt-spelling-bee-solver.git
    cd nyt-spelling-bee-solver
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv  
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. Install dependencies
+   ```bash
+   pip install -r requirements.txt  
