@@ -30,4 +30,11 @@ A Python-based web application that helps solve the New York Times Spelling Bee 
    source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. Install dependencies
    ```bash
-   pip install -r requirements.txt  
+   pip install -r requirements.txt
+
+## Running and Deployment
+After installing dependencies, run the application locally by setting the Flask app and starting the development server:
+
+```bash
+export FLASK_APP=main  # On Windows: set FLASK_APP=main
+flask --app main run
