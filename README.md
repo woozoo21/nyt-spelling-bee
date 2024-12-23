@@ -34,7 +34,7 @@ A Python-based web application that helps solve the New York Times Spelling Bee 
 
 ## Running and Deployment
 After installing dependencies, run the application locally by setting the Flask app and starting the development server:
-
+Visit http://127.0.0.1:5000 in your browser to use the app.
 ```bash
 export FLASK_APP=main  # On Windows: set FLASK_APP=main
 flask --app main run
